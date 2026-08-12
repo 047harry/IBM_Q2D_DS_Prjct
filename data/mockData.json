@@ -1,0 +1,9 @@
+{
+  "title": "IBM Q2D DS Project",
+  "description": "A minimal Next.js starter focused on quick setup and simple Vercel deployment.",
+  "features": [
+    "Built with Next.js App Router in plain JavaScript",
+    "Uses local JSON mock data for initial content",
+    "Ready to deploy directly from GitHub to Vercel"
+  ]
+}
