@@ -1,0 +1,37 @@
+{
+  "metrics": {
+    "model": "Random Forest (offline training placeholder)",
+    "accuracy": 0.86,
+    "precision": 0.78,
+    "recall": 0.74,
+    "f1": 0.76,
+    "roc_auc": 0.88,
+    "baseline_attrition_rate": 0.35
+  },
+  "feature_importance": [
+    {
+      "feature": "OverTime",
+      "importance": 0.29
+    },
+    {
+      "feature": "YearsAtCompany",
+      "importance": 0.21
+    },
+    {
+      "feature": "MonthlyIncome",
+      "importance": 0.17
+    },
+    {
+      "feature": "JobSatisfaction",
+      "importance": 0.14
+    },
+    {
+      "feature": "DistanceFromHome",
+      "importance": 0.11
+    },
+    {
+      "feature": "Department",
+      "importance": 0.08
+    }
+  ]
+}

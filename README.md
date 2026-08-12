@@ -1,39 +1,31 @@
-# IBM_Q2D_DS_Prjct
+# IBMQ2DST1210 - HR Talent Retention & Employee Exit Analytics
 
-Minimal Next.js app (JavaScript) for direct deployment to Vercel.
+A simple Vercel-ready prototype built with Next.js, TypeScript, Tailwind CSS, and Recharts.
 
-## Tech Requirements
+## Pages
 
-- Node.js LTS (v20 recommended)
-- npm
-- GitHub repository
-- Vercel account
+- **Dashboard**: dynamic KPIs, department exit chart, attrition split, and interactive scatter analysis.
+- **Attrition Prediction**: risk segmentation, top risk driver chart, and high-risk employee table.
+- **What-if Simulator**: parameter sliders to simulate attrition impact and estimated savings.
 
-## Stack
+## Tech Stack
 
-- Framework: Next.js (App Router)
-- Language: JavaScript
-- Styling: CSS Modules
-- Data: Local mock JSON (`/data/mockData.json`)
-- Backend: Next.js API routes (add only when needed)
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Recharts
+- Static JSON data in `public/data`
 
-## Local Development
-
-Install dependencies:
+## Run Locally
 
 ```bash
 npm install
-```
-
-Start development server:
-
-```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open: `http://localhost:3000`
 
-## Build & Lint
+## Validate
 
 ```bash
 npm run lint
@@ -42,9 +34,12 @@ npm run build
 
 ## Deploy to Vercel
 
-1. Push your code to GitHub.
-2. Import the repository into Vercel.
-3. Keep defaults (framework detected as Next.js).
+1. Push this repository to GitHub.
+2. Import repository in Vercel.
+3. Keep default settings (Next.js auto-detected).
 4. Deploy.
 
-Vercel will auto-deploy new pushes by default.
+## Required Submission Names
+
+1. Case study report: `IBMQ2DST1210_casestudy.pdf`
+2. Prototype: `IBMQ2DST1210_prototype`
