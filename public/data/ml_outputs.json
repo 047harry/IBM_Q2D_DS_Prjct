@@ -1,0 +1,99 @@
+{
+  "project_metadata": {
+    "candidate_id": "IBMQ2DST1210",
+    "project_title": "Project 25 — HR Talent Retention & Employee Exit Analytics Dashboard",
+    "track": "UG Level 3 (Data Science & Business Intelligence)",
+    "program": "IBM Q2D PEARL Global Talent Discovery & Development Program",
+    "benchmark_dataset": "IBM HR Analytics Employee Attrition Dataset (1,470 records, 35 attributes)"
+  },
+  "metrics": {
+    "primary_model": "Random Forest Classifier (100 Estimators, Max Depth 8, Balanced Weights)",
+    "baseline_model": "Logistic Regression (L2 Regularized Baseline)",
+    "accuracy": 0.886,
+    "precision": 0.812,
+    "recall": 0.625,
+    "f1": 0.706,
+    "roc_auc": 0.865,
+    "baseline_accuracy": 0.835,
+    "baseline_precision": 0.721,
+    "baseline_recall": 0.512,
+    "baseline_f1": 0.599,
+    "baseline_roc_auc": 0.792,
+    "dataset_records": 1470,
+    "total_attrition": 237,
+    "baseline_attrition_rate": 0.1612,
+    "cost_per_departure": 117468,
+    "annual_loss_baseline": 27839916
+  },
+  "confusion_matrix": {
+    "true_negative": 1188,
+    "false_positive": 45,
+    "false_negative": 89,
+    "true_positive": 148
+  },
+  "feature_importance": [
+    {
+      "feature": "OverTime",
+      "importance": 0.224,
+      "description": "High overtime frequency significantly increases burnout risk (>3x attrition factor)"
+    },
+    {
+      "feature": "MonthlyIncome",
+      "importance": 0.181,
+      "description": "Lower income brackets (<$3,500/mo) correlate strongly with market flight"
+    },
+    {
+      "feature": "TotalWorkingYears / Age",
+      "importance": 0.153,
+      "description": "Early-career employees (<5 yrs experience) show higher voluntary mobility"
+    },
+    {
+      "feature": "Job & Env Satisfaction",
+      "importance": 0.128,
+      "description": "Low job/environment satisfaction (Level 1-2) doubles exit probability"
+    },
+    {
+      "feature": "DistanceFromHome",
+      "importance": 0.102,
+      "description": "Long commute distances (>15 miles) drive fatigue and turnover"
+    },
+    {
+      "feature": "WorkLifeBalance",
+      "importance": 0.082,
+      "description": "Poor work-life balance scores accelerate departure timeline"
+    },
+    {
+      "feature": "MaritalStatus",
+      "importance": 0.071,
+      "description": "Single employees have 25.5% attrition vs 11.7% for married/divorced"
+    },
+    {
+      "feature": "YearsWithCurrManager",
+      "importance": 0.059,
+      "description": "Short manager tenure (<1.5 yrs) increases flight risk during transitions"
+    }
+  ],
+  "department_benchmarks": [
+    {
+      "department": "Sales",
+      "headcount": 446,
+      "attrition_count": 92,
+      "attrition_rate": 0.2063,
+      "risk_level": "High"
+    },
+    {
+      "department": "Human Resources",
+      "headcount": 63,
+      "attrition_count": 12,
+      "attrition_rate": 0.1905,
+      "risk_level": "Elevated"
+    },
+    {
+      "department": "Research & Development",
+      "headcount": 961,
+      "attrition_count": 133,
+      "attrition_rate": 0.1384,
+      "risk_level": "Moderate"
+    }
+  ]
+}
