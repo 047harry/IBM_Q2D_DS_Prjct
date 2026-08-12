@@ -14,7 +14,7 @@ A simple Vercel-ready prototype built with Next.js, TypeScript, Tailwind CSS, an
 - TypeScript
 - Tailwind CSS
 - Recharts
-- Static JSON data in `public/data`
+- IBM HR Analytics Attrition CSV dataset in `public/data/WA_Fn-UseC_-HR-Employee-Attrition.csv`
 
 ## Run Locally
 

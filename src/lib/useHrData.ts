@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { HRRecord } from "@/lib/hr";
+import { parseHrCsv, type HRRecord } from "@/lib/hr";
 
 export function useHrData() {
   const [data, setData] = useState<HRRecord[]>([]);
@@ -10,11 +10,11 @@ export function useHrData() {
   useEffect(() => {
     let active = true;
 
-    fetch("/data/hr_data.json")
-      .then((response) => response.json())
-      .then((json: HRRecord[]) => {
+    fetch("/data/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+      .then((response) => response.text())
+      .then((csvText) => {
         if (!active) return;
-        setData(json);
+        setData(parseHrCsv(csvText));
       })
       .finally(() => {
         if (active) setLoading(false);
